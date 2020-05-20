@@ -19,3 +19,7 @@ I've found with my last class that writing down my thought process as I work thr
 
 #### Plot 1
 *Pre-graph Evaluation: Probable Histogram, X-Axis (xlab) is "Global Active Power (kilowatts)", Y-Axis (ylab) is "Frequency", color (col) is "red", Overall Label (main) is "Global Active Power"
+
+#### Plot 2
+* Pre-graph Evaluation: Line Graph (plot(type="l")),dates are by day of week, Y-Axis is (ylab) is "Global Active Power (kilowatts)" - will need some experimentation on Date Conversions
+
