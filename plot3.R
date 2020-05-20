@@ -65,10 +65,14 @@ febData$datetime <- as.POSIXct(datetime)
 png("plot2.png",width=480,height=480)
 
 ## 5.2 Create the complex line-plot for the 3rd plot with Days of week on the X-Axis and Energy sub metering on the Y-Axis
-plot()
+with(febData, {
+  plot(Sub_metering_1~datetime,type="l",col="black",xlab="",ylab="Enegery sub metering")
+  lines(Sub_metering_2~datetime, col="red")
+  lines(Sub_metering_3~datetime, col="blue")
+})
 
 ## 5.3 Create the legend
-
+legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lwd=2.5,col=c("black","red","blue"))
 
 ## 5.4 Close the device which saves the lineplot to the PNG
 dev.off()
