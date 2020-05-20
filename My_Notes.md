@@ -26,3 +26,5 @@ I've found with my last class that writing down my thought process as I work thr
 #### Plot 3
 * Pre-graph Evaluation: 3x subsets with legend, probable line-graph, but possible steps or other options for type... also x-axis via day of week, Y-Axis is (ylab) "Energy sub meeting"
 
+#### Plot 4
+* Pre-graph Evaluation: 2x2 Split-Table (created by parameters... par(mfrow=c(2,2))), all share X-Axis time-based (Thu-Sat), 1st plot is Y-Axis (ylab) "Global Active Power" line graph (type="l"); 2nd plot is Y-Axis of voltage, X-Axis contains xlab = "datetime"; 3rd plot same as PLOT 3; 4th plot has Y-Axis of "Global_reactive_power" and X-Axis label of "datetime"
