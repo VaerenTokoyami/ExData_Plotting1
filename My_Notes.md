@@ -23,3 +23,6 @@ I've found with my last class that writing down my thought process as I work thr
 #### Plot 2
 * Pre-graph Evaluation: Line Graph (plot(type="l")),dates are by day of week, Y-Axis is (ylab) is "Global Active Power (kilowatts)" - will need some experimentation on Date Conversions
 
+#### Plot 3
+* Pre-graph Evaluation: 3x subsets with legend, probable line-graph, but possible steps or other options for type... also x-axis via day of week, Y-Axis is (ylab) "Energy sub meeting"
+
