@@ -29,5 +29,7 @@ I've found with my last class that writing down my thought process as I work thr
 #### Plot 4
 * Pre-graph Evaluation: 2x2 Split-Table (created by parameters... par(mfrow=c(2,2))), all share X-Axis time-based (Thu-Sat), 1st plot is Y-Axis (ylab) "Global Active Power" line graph (type="l"); 2nd plot is Y-Axis of voltage, X-Axis contains xlab = "datetime"; 3rd plot same as PLOT 3; 4th plot has Y-Axis of "Global_reactive_power" and X-Axis label of "datetime"
 
-## Start- In-progress Notes:
+## In-progress Notes:
 * Missed the subsetting for only data from February 1st 2007 to February 2nd 2007... at least this will be copy & paste
+
+## Completed- signed all of my PNG submissions with my initials on the commits...
