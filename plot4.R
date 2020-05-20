@@ -67,7 +67,22 @@ png("plot4.png",width=480,height=480)
 ## 5.2 Establish the split plot parameters to create a unified 2x2 plot
 par(mfrow=c(2,2))
 
-## 5.3 Test
+## 5.3 Create plot line diagram 1 (top left) using the same plot from 'plot 2'
+plot(febData$Global_active_power~febData$datetime, type="l", xlab="", ylab="Global Active Power")
+
+## 5.4 Create plot line diagram 2 (top right) using shell from 'plot 2', but switching GAP with Voltage
+plot(febData$Voltage~febData$datetime, type="l", xlab="datetime", ylab="Voltage")
+
+## 5.5 Create plot line diagram 3 (bottom left) using shell from 'plot 3', but altering legend to not have an outline
+with(febData, {
+  plot(Sub_metering_1~datetime,type="l",col="black",xlab="",ylab="Enegery sub metering")
+  lines(Sub_metering_2~datetime, col="red")
+  lines(Sub_metering_3~datetime, col="blue")
+})
+
+legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lwd=2.5,col=c("black","red","blue"), bty="n")
+
+## 5.6 Test
 
 ## 5.X Close the device which saves the lineplot to the PNG
 dev.off()
