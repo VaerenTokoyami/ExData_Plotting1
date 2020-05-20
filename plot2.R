@@ -65,6 +65,7 @@ febData$datetime <- as.POSIXct(datetime)
 png("plot2.png",width=480,height=480)
 
 ## 5.2 Create the Lineplot for the 2nd plot with Days of week on the X-Axis and Global Active Power on the Y-Axis
+plot(febData$Global_active_power~febData$datetime, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
-## 5.X Close the device which saves the lineplot to the PNG
+## 5.3 Close the device which saves the lineplot to the PNG
 dev.off()
