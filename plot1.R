@@ -40,6 +40,8 @@ powerData$Date <- as.Date(powerData$Date, format="%d/%m/%Y")
 ## 3.2 Create the next subset of the imported data that we'll be utilizing to create the plots
 febData <- subset(powerData, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 
+## 3.3 Close (remove) Table 'powerData'
+rm(powerData)
 
 
 # Step 4 - Convert Dates/Times into POSIXct compliant datetime values
