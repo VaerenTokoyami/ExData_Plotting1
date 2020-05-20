@@ -69,5 +69,3 @@ hist(as.numeric(febData$Global_active_power), xlab="Global Active Power (kilowat
 
 ## 5.3 Close the device which saves the histogram to the PNG
 dev.off()
-
-##time for test
