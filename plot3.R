@@ -62,7 +62,7 @@ febData$datetime <- as.POSIXct(datetime)
 # Step 5 - Create Plot 3
 
 ## 5.1 Create the Graphics Device for the Plot to be displayed to as a 480x480pixel PNG as identified in the prompt
-png("plot2.png",width=480,height=480)
+png("plot3.png",width=480,height=480)
 
 ## 5.2 Create the complex line-plot for the 3rd plot with Days of week on the X-Axis and Energy sub metering on the Y-Axis
 with(febData, {
