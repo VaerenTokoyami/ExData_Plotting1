@@ -17,18 +17,18 @@ SourceFileName <- "household_power_consumption.zip"
 
 # Step 2 - Download, Unzip, & Load the Source Origin Data File
 
-## Step 2.1 - Download (via an if argument so we're not re-downloading the source file for every plot)
+## 2.1 Download (via an if argument so we're not re-downloading the source file for every plot)
 if(!file.exists(SourceFileName)) {
   download.file(SourceURL,SourceFileName, mode="wb")
 }
 
-## Step 2.2 - Unzip (via an if argument so we're not re-creating the local source file for every plot)
+## 2.2 Unzip (via an if argument so we're not re-creating the local source file for every plot)
 SourceDest <- "household_power_consumption.txt"
 if(!file.exists(SourceDest)) {
   unzip(SourceFileName)
 }
 
-## Step 2.3 - Load the Data
+## 2.3 Load the Data
 powerData <- read.table(SourceDest, header=TRUE, sep=";")
 
 
@@ -59,4 +59,6 @@ febData$datetime <- as.POSIXct(datetime)
 
 
 
-# Step 5 - 
+# Step 5 - Create Plot 1
+
+## 5.1 
