@@ -65,7 +65,7 @@ febData$datetime <- as.POSIXct(datetime)
 png("plot1.png",width=480,height=480)
 
 ## 5.2 Create the histogram based on the febData table with X-Axis as Global Active Power and Y-Axis as Frequency
-hist(febData$Global_active_power, xlab="Global Active Power (kilowatts)",ylab="Frequency",col="red",main="Global Active Power")
+hist(as.numeric(febData$Global_active_power), xlab="Global Active Power (kilowatts)",ylab="Frequency",col="red",main="Global Active Power")
 
 ## 5.3 Close the device which saves the histogram to the PNG
 dev.off()
