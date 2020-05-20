@@ -15,3 +15,7 @@ I've found with my last class that writing down my thought process as I work thr
       
 ### Break
 
+### Time to Evaluate Plot Settings:
+
+#### Plot 1
+*Pre-graph Evaluation: Probable Histogram, X-Axis (xlab) is "Global Active Power (kilowatts)", Y-Axis (ylab) is "Frequency", color (col) is "red", Overall Label (main) is "Global Active Power"
