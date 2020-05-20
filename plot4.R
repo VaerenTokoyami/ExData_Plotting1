@@ -82,7 +82,8 @@ with(febData, {
 
 legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lwd=2.5,col=c("black","red","blue"), bty="n")
 
-## 5.6 Test
+## 5.6 Create plot line diagram 4 (bottom right) using shell from plot 2 but altering labels
+plot(febData$Global_reactive_power~febData$datetime, type="l", xlab="datetime", ylab="Global_reactive_power")
 
 ## 5.X Close the device which saves the lineplot to the PNG
 dev.off()
