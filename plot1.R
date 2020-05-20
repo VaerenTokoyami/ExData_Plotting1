@@ -3,6 +3,7 @@
 
 
 
+
 # Step 1 - Identify Data Repository Source Origin Data
 
 ## 1.1 Create Variable to store the dataset URL from project prompt
@@ -10,6 +11,7 @@ SourceURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_po
 
 ## 1.2 Create variable to store the dataset filename from the URL from the project prompt
 SourceFileName <- "household_power_consumption.zip"
+
 
 
 
@@ -44,6 +46,8 @@ febData <- subset(powerData, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"
 rm(powerData)
 
 
+
+
 # Step 4 - Convert Dates/Times into POSIXct compliant datetime values
 
 ## 4.1 Create temp variable 'datetime'
@@ -51,5 +55,8 @@ datetime <- paste(as.Date(febData$Date), febData$Time)
 
 ## 4.2 Create a new variable as part of febData table known as 'datetime'
 febData$datetime <- as.POSIXct(datetime)
+
+
+
 
 # Step 5 - 
